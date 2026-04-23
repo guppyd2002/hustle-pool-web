@@ -53,12 +53,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGLBuild.loader.js";
+      var loaderUrl = buildUrl + "/WebGLBuild.loader.js?v=30ce190";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/WebGLBuild.data.unityweb",
-        frameworkUrl: buildUrl + "/WebGLBuild.framework.js.unityweb",
-        codeUrl: buildUrl + "/WebGLBuild.wasm.unityweb",
+        dataUrl: buildUrl + "/WebGLBuild.data.unityweb?v=30ce190",
+        frameworkUrl: buildUrl + "/WebGLBuild.framework.js.unityweb?v=30ce190",
+        codeUrl: buildUrl + "/WebGLBuild.wasm.unityweb?v=30ce190",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Pool",
@@ -131,5 +131,6 @@
       document.body.appendChild(script);
 
     </script>
-  </body>
+  <div id="version-overlay" style="position:fixed;bottom:5px;left:5px;color:rgba(255,255,255,0.6);font-size:12px;z-index:9999;pointer-events:none">v0.3.1-30ce190</div>
+</body>
 </html>
