@@ -10,6 +10,13 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   <script>window.gameReady=false;window.gameStats=null;window.sceneStats=null;window.ballPositions=null;window.turnState=null;window.cueStickState=null;window.aimState=null;window.gameState=null;window.callShotState=null;</script>
+<script>
+window.sendToUnity = function(obj, method, param) {
+  if (!window.unityInstance) { console.error('[sendToUnity] unityInstance not ready'); return; }
+  if (param !== undefined) window.unityInstance.SendMessage(obj, method, param);
+  else window.unityInstance.SendMessage(obj, method);
+};
+</script>
 </head>
   <body>
     <div id="unity-container" class="unity-desktop">
